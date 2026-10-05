@@ -1,0 +1,29 @@
+{
+  "metrics": [
+    {
+      "accuracy": 0.9812639821029083,
+      "precision": 0.7623762376237624,
+      "recall": 0.8901734104046243,
+      "f1_score": 0.8213333333333334,
+      "roc_auc": 0.9896436160545183,
+      "model": "Logistic Regression"
+    },
+    {
+      "accuracy": 0.9801454138702461,
+      "precision": 1.0,
+      "recall": 0.5895953757225434,
+      "f1_score": 0.7418181818181818,
+      "roc_auc": 0.9907324207304334,
+      "model": "Random Forest"
+    },
+    {
+      "accuracy": 0.985738255033557,
+      "precision": 0.8961038961038961,
+      "recall": 0.7976878612716763,
+      "f1_score": 0.8440366972477065,
+      "roc_auc": 0.9838208041527451,
+      "model": "XGBoost"
+    }
+  ],
+  "best_model": "Random Forest"
+}

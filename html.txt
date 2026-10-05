@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fake Job Scam Detector</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+
+        <div class="logo">
+            🛡️ ScamShield
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#detector">Detector</a>
+            <a href="#about">About</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="tag">MACHINE LEARNING POWERED</p>
+
+            <h1>
+                Detect Fake Jobs
+                <span>Before You Apply.</span>
+            </h1>
+
+            <p>
+                Analyze job and internship postings and identify
+                suspicious employment scams using intelligent detection.
+            </p>
+
+            <a href="#detector" class="primary-btn">
+                Check a Job →
+            </a>
+
+        </div>
+
+        <div class="hero-card">
+
+            <div class="shield">
+                🛡️
+            </div>
+
+            <h3>Job Safety Check</h3>
+
+            <p>
+                Protect yourself from fake job and internship scams.
+            </p>
+
+            <div class="safe">
+                ✓ Scam Detection
+            </div>
+
+            <div class="safe">
+                ✓ Risk Analysis
+            </div>
+
+            <div class="safe">
+                ✓ Instant Result
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Detector Section -->
+    <section id="detector" class="detector-section">
+
+        <div class="section-heading">
+
+            <p class="tag">SCAM DETECTOR</p>
+
+            <h2>Check a Job Posting</h2>
+
+            <p>
+                Enter the details of a job or internship posting below.
+            </p>
+
+        </div>
+
+
+        <div class="detector-container">
+
+            <form id="jobForm">
+
+                <div class="form-group">
+
+                    <label>Job Title</label>
+
+                    <input
+                        type="text"
+                        id="jobTitle"
+                        placeholder="Example: Software Developer Intern"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Company Name</label>
+
+                    <input
+                        type="text"
+                        id="company"
+                        placeholder="Example: ABC Technologies"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Salary / Stipend</label>
+
+                    <input
+                        type="text"
+                        id="salary"
+                        placeholder="Example: ₹20,000 per month"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Job Description</label>
+
+                    <textarea
+                        id="description"
+                        rows="7"
+                        placeholder="Paste the complete job description here..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Job Posting URL</label>
+
+                    <input
+                        type="url"
+                        id="url"
+                        placeholder="https://example.com/job"
+                    >
+
+                </div>
+
+
+                <button type="submit" class="detect-btn">
+
+                    🔍 Analyze Job
+
+                </button>
+
+            </form>
+
+
+            <!-- Result -->
+            <div id="result" class="result-card hidden">
+
+                <div id="resultIcon" class="result-icon">
+                    🔍
+                </div>
+
+                <h2 id="resultTitle">
+                    Analysis Result
+                </h2>
+
+                <p id="resultMessage"></p>
+
+
+                <div class="probability">
+
+                    <div class="probability-header">
+
+                        <span>Fraud Probability</span>
+
+                        <strong id="probabilityText">
+                            0%
+                        </strong>
+
+                    </div>
+
+                    <div class="progress">
+
+                        <div
+                            id="progressBar"
+                            class="progress-bar">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="risk-details">
+
+                    <div>
+                        <span>Risk Level</span>
+                        <strong id="riskLevel">-</strong>
+                    </div>
+
+                    <div>
+                        <span>Prediction</span>
+                        <strong id="prediction">-</strong>
+                    </div>
+
+                </div>
+
+
+                <button
+                    onclick="resetDetector()"
+                    class="secondary-btn">
+
+                    Check Another Job
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section class="features">
+
+        <div class="section-heading">
+
+            <p class="tag">FEATURES</p>
+
+            <h2>How ScamShield Helps</h2>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">🤖</div>
+
+                <h3>Machine Learning</h3>
+
+                <p>
+                    Analyze job posting patterns using machine learning.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">📝</div>
+
+                <h3>Text Analysis</h3>
+
+                <p>
+                    Analyze job titles and descriptions using NLP techniques.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">⚡</div>
+
+                <h3>Instant Detection</h3>
+
+                <p>
+                    Get an immediate risk assessment for a job posting.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">🔐</div>
+
+                <h3>Job Safety</h3>
+
+                <p>
+                    Help students and job seekers avoid employment scams.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="about">
+
+        <p class="tag">ABOUT THE PROJECT</p>
+
+        <h2>Fake Job / Internship Scam Detection</h2>
+
+        <p>
+            This project aims to develop an intelligent system that
+            automatically detects fraudulent job and internship postings.
+            The system analyzes textual and structural information from
+            job advertisements and provides a risk prediction.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 ScamShield | Machine Learning Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
